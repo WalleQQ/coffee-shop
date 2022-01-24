@@ -3,8 +3,6 @@ name: Firebase CI
 on:
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
 
 jobs:
   build:
@@ -21,7 +19,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      # - run: npm install -g yarn
       - name: npm install, build and test
         run: |
           npm install
