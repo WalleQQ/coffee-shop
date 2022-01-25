@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import { Footer } from '../footer/Footer';
 import { Header } from '../header/Header';
 import { Main } from '../main/Main';
