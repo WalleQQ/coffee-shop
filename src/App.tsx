@@ -1,10 +1,11 @@
 import React from 'react';
+import { PageWrapper } from './components/layout/page-wrapper/PageWrapper';
 
 const App = () => {
   return (
-    <div>
-      <h1>Тест</h1>
-    </div>
+    <>
+      <PageWrapper>dsdds</PageWrapper>
+    </>
   );
 };
 
