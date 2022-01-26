@@ -1,5 +1,5 @@
 @import '/src/globalCss.css';
 
 .Header {
-  padding: var(--header-padding);
+  padding: var(--padding-1);
 }

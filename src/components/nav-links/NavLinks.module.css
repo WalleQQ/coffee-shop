@@ -7,17 +7,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: var(--min-line-height);
-  column-gap: var(--max-nav-gap);
+  line-height: var(--line-height-1);
+  column-gap: var(--gap-2);
 }
 
 .NavLinksItemLink {
-  padding: var(--nav-padding);
+  padding: var(--padding-2);
 }
 
 .UserNavigation {
   box-sizing: border-box;
   display: flex;
-  column-gap: var(--max-nav-user-navigation-gap);
+  column-gap: var(--gap-2);
   align-items: center;
 }
