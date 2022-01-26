@@ -43,12 +43,20 @@
   --main-font-bold: 'Gilroy-Bold';
   --main-font-black: 'Gilroy-Black';
 
+  --line-height-1: 29px;
+
   --max-width: 1660px;
+
+  --padding-1: 22px;
+  --padding-2: 45px;
+
+  --gap-1: 53px;
+  --gap-2: 100px;
 }
 
 a {
   text-decoration: none;
-  color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 img {
