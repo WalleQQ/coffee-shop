@@ -43,7 +43,15 @@
   --main-font-bold: 'Gilroy-Bold';
   --main-font-black: 'Gilroy-Black';
 
+  --min-line-height: 29px;
+
   --max-width: 1660px;
+
+  --header-padding: 22px 0;
+  --nav-padding: 45px 0;
+
+  --max-nav-gap: 100px;
+  --max-nav-user-navigation-gap: 53px;
 }
 
 a {

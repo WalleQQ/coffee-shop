@@ -1,3 +1,5 @@
+@import '/src/globalCss.css';
+
 .NavLinksList {
   list-style: none;
   margin: 0;
@@ -5,17 +7,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 29px;
-  column-gap: 100px;
+  line-height: var(--min-line-height);
+  column-gap: var(--max-nav-gap);
 }
 
 .NavLinksItemLink {
-  padding: 45px 0;
+  padding: var(--nav-padding);
 }
 
 .UserNavigation {
   box-sizing: border-box;
   display: flex;
-  column-gap: 53px;
+  column-gap: var(--max-nav-user-navigation-gap);
   align-items: center;
 }

@@ -1,4 +1,5 @@
+@import '/src/globalCss.css';
+
 .Header {
-  padding: 22px 0;
-  border: 1px solid black;
+  padding: var(--header-padding);
 }
