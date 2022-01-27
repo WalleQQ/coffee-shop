@@ -1,0 +1,6 @@
+.UserNavigation {
+  box-sizing: border-box;
+  display: flex;
+  column-gap: var(--gap-2);
+  align-items: center;
+}
