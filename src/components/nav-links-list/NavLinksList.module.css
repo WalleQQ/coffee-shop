@@ -1,5 +1,3 @@
-@import '/src/globalCss.css';
-
 .NavLinksList {
   list-style: none;
   margin: 0;
@@ -13,11 +11,4 @@
 
 .NavLinksItemLink {
   padding: var(--padding-2) 0;
-}
-
-.UserNavigation {
-  box-sizing: border-box;
-  display: flex;
-  column-gap: var(--gap-2);
-  align-items: center;
 }
