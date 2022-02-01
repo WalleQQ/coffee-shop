@@ -12,7 +12,7 @@ export const Promo = () => {
         на дом. Мы обжариваем кофе{' '}
         <strong className={styles.promoTextStrong}>каждые выходные</strong>.
       </p>
-      <Button link={AppRoute.CATALOG} size='big'>
+      <Button link={AppRoute.CATALOG} size='x-large'>
         Посмотреть каталог
       </Button>
     </section>

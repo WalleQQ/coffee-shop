@@ -7,7 +7,7 @@ interface ButonProps {
   link?: string;
   onClick?: () => void;
   padding?: number;
-  size?: 'small' | 'medium' | 'big';
+  size?: 'x-small' | 'small' | 'medium' | 'large' | 'x-large';
 }
 
 export const Button: FC<ButonProps> = ({
@@ -25,9 +25,11 @@ export const Button: FC<ButonProps> = ({
             {...props}
             to={link}
             className={classNames(styles.button, {
+              [styles.xsm]: size === 'x-small',
               [styles.sm]: size === 'small',
               [styles.md]: size === 'medium',
-              [styles.bg]: size === 'big',
+              [styles.lg]: size === 'large',
+              [styles.xlg]: size === 'x-large',
             })}
           >
             {children}

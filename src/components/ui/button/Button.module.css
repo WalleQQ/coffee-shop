@@ -17,7 +17,7 @@
   min-width: var(--width-3);
 }
 
-.extraSm {
+.xsm {
   max-width: var(--width-7);
   padding: var(--padding-9) var(--padding-11);
 }
@@ -27,17 +27,17 @@
   padding: var(--padding-9) var(--padding-10);
 }
 
-.extraMd {
+.md {
   max-width: var(--max-width-5);
   padding: var(--padding-7) var(--padding-8);
 }
 
-.md {
+.lg {
   max-width: var(--width-4);
   padding: var(--padding-7) var(--padding-4);
 }
 
-.bg {
+.xlg {
   padding: var(--padding-1) var(--padding-6);
   max-width: var(--width-2);
 }
