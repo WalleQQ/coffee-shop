@@ -12,20 +12,32 @@
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
-  max-width: var(--width-2);
-  min-width: var(--width-3);
   font-size: var(--font-size-4);
   line-height: var(--line-height-4);
+  min-width: var(--width-3);
+}
+
+.extraSm {
+  max-width: var(--width-7);
+  padding: var(--padding-9) var(--padding-11);
 }
 
 .sm {
-  color: red;
+  max-width: var(--width-6);
+  padding: var(--padding-9) var(--padding-10);
+}
+
+.extraMd {
+  max-width: var(--max-width-5);
+  padding: var(--padding-7) var(--padding-8);
 }
 
 .md {
-  color: green;
+  max-width: var(--width-4);
+  padding: var(--padding-7) var(--padding-4);
 }
 
 .bg {
   padding: var(--padding-1) var(--padding-6);
+  max-width: var(--width-2);
 }

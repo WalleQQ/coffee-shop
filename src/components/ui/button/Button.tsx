@@ -1,6 +1,5 @@
-import React, { FC, RefAttributes, useState } from 'react';
+import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { AppRoute } from '../../../const';
 import styles from './Button.module.css';
 import classNames from 'classnames';
 
