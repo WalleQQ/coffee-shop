@@ -1,4 +1,4 @@
-.NavLinksList {
+.navLinksList {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -9,6 +9,6 @@
   column-gap: var(--gap-2);
 }
 
-.NavLinksItemLink {
+.navLinksItemLink {
   padding: var(--padding-2) 0;
 }

@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  min-height: var(--height-1);
+  background-color: var(--basic-yellow);
+  border: none;
+  background-image: none;
+  border-radius: var(--border-radius-1);
+  font-family: var(--main-font-bold), sans-serif;
+  color: var(--basic-white);
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+  min-width: var(--width-3);
+}
+
+.xsm {
+  max-width: var(--width-7);
+  padding: var(--padding-9) var(--padding-11);
+}
+
+.sm {
+  max-width: var(--width-6);
+  padding: var(--padding-9) var(--padding-10);
+}
+
+.md {
+  max-width: var(--max-width-5);
+  padding: var(--padding-7) var(--padding-8);
+}
+
+.lg {
+  max-width: var(--width-4);
+  padding: var(--padding-7) var(--padding-4);
+}
+
+.xlg {
+  padding: var(--padding-1) var(--padding-6);
+  max-width: var(--width-2);
+}

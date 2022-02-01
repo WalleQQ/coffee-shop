@@ -1,0 +1,23 @@
+.promo {
+  padding: var(--padding-4) 0 var(--padding-5) 0;
+  position: relative;
+  background: url('/src/assets/promo-cup.png') 87% 25% no-repeat,
+    url('/src/assets/promo-coffee.png') 90% 20% no-repeat;
+}
+
+.promoTitle {
+  font-family: var(--main-font-black);
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  margin: 0 0 var(--margin-1) 0;
+}
+
+.promoText {
+  margin: 0;
+  max-width: var(--width-1);
+  margin-bottom: var(--margin-2);
+}
+
+.promoTextStrong {
+  font-family: var(--main-font-bold);
+}
