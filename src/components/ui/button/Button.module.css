@@ -1,0 +1,31 @@
+.button {
+  display: block;
+  min-height: var(--height-1);
+  background-color: var(--basic-yellow);
+  border: none;
+  background-image: none;
+  border-radius: var(--border-radius-1);
+  font-family: var(--main-font-bold), sans-serif;
+  color: var(--basic-white);
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  max-width: var(--width-2);
+  min-width: var(--width-3);
+  font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
+}
+
+.sm {
+  color: red;
+}
+
+.md {
+  color: green;
+}
+
+.bg {
+  padding: var(--padding-1) var(--padding-6);
+}

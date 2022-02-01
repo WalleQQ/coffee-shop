@@ -5,7 +5,7 @@ import styles from './Nav.module.css';
 
 export const Nav = () => {
   return (
-    <nav className={styles.Nav}>
+    <nav className={styles.nav}>
       <Logo />
       <NavLinks />
     </nav>

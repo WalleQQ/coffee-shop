@@ -19,14 +19,14 @@ export const Logo = () => {
     <>
       {isHomePage ? (
         <img
-          className={styles.Logo}
+          className={styles.logo}
           src={logo}
           alt='Логотип Интернет магазина Miller'
         />
       ) : (
         <Link to='/' style={{ display: 'flex' }}>
           <img
-            className={styles.Logo}
+            className={styles.logo}
             src={logo}
             alt='Логотип Интернет магазина Miller'
           />
