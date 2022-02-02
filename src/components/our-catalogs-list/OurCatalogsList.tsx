@@ -34,9 +34,11 @@ export const OurCatalogsList = () => {
     },
   ];
 
-  const productItems = products.map((product) => (
-    <OurCatalogsItem product={product} key={product.id} />
-  ));
-
-  return <ul className={styles.ourCatalogsList}>{productItems}</ul>;
+  return (
+    <ul className={styles.ourCatalogsList}>
+      {products.map((product) => (
+        <OurCatalogsItem product={product} key={product.id} />
+      ))}
+    </ul>
+  );
 };

@@ -20,21 +20,19 @@ export const Button: FC<ButonProps> = ({
   return (
     <>
       {link ? (
-        <>
-          <Link
-            {...props}
-            to={link}
-            className={classNames(styles.button, {
-              [styles.xsm]: size === 'xSmall',
-              [styles.sm]: size === 'small',
-              [styles.md]: size === 'medium',
-              [styles.lg]: size === 'large',
-              [styles.xlg]: size === 'xLarge',
-            })}
-          >
-            {children}
-          </Link>
-        </>
+        <Link
+          {...props}
+          to={link}
+          className={classNames(styles.button, {
+            [styles.xsm]: size === 'xSmall',
+            [styles.sm]: size === 'small',
+            [styles.md]: size === 'medium',
+            [styles.lg]: size === 'large',
+            [styles.xlg]: size === 'xLarge',
+          })}
+        >
+          {children}
+        </Link>
       ) : (
         <button
           {...props}
