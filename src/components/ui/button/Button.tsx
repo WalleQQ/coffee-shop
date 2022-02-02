@@ -20,7 +20,7 @@ export const Button: FC<ButonProps> = ({
   return (
     <>
       {link ? (
-        <div>
+        <>
           <Link
             {...props}
             to={link}
@@ -34,9 +34,19 @@ export const Button: FC<ButonProps> = ({
           >
             {children}
           </Link>
-        </div>
+        </>
       ) : (
-        <button {...props} className={styles.button} type='button'>
+        <button
+          {...props}
+          type='button'
+          className={classNames(styles.button, {
+            [styles.xsm]: size === 'xSmall',
+            [styles.sm]: size === 'small',
+            [styles.md]: size === 'medium',
+            [styles.lg]: size === 'large',
+            [styles.xlg]: size === 'xLarge',
+          })}
+        >
           {children}
         </button>
       )}

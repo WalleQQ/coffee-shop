@@ -35,6 +35,8 @@
 .lg {
   max-width: var(--width-4);
   padding: var(--padding-7) var(--padding-4);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-1);
 }
 
 .xlg {
