@@ -1,0 +1,35 @@
+.ourCatalogsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--width-2);
+  height: var(--height-2);
+  background: var(--basic-white);
+  box-shadow: var(--box-shadow-1);
+  border-radius: var(--border-radius-2);
+  box-sizing: border-box;
+  padding: var(--padding-11) 0 var(--padding-14) 0;
+  position: relative;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  height: 370px;
+}
+
+.ourCatalogsItemTitle {
+  font-family: 'Gilroy-Bold';
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-1);
+  order: 2;
+}
+
+.ourCatalogsItemImage {
+  order: 1;
+}

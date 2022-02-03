@@ -1,0 +1,5 @@
+.ourCatalogsList {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap-3);
+}

@@ -17,26 +17,22 @@ export const Button: FC<ButonProps> = ({
   size = 'small',
   ...props
 }) => {
+  const btnClass = classNames(styles.button, {
+    [styles.xsm]: size === 'xSmall',
+    [styles.sm]: size === 'small',
+    [styles.md]: size === 'medium',
+    [styles.lg]: size === 'large',
+    [styles.xlg]: size === 'xLarge',
+  });
+
   return (
     <>
       {link ? (
-        <div>
-          <Link
-            {...props}
-            to={link}
-            className={classNames(styles.button, {
-              [styles.xsm]: size === 'xSmall',
-              [styles.sm]: size === 'small',
-              [styles.md]: size === 'medium',
-              [styles.lg]: size === 'large',
-              [styles.xlg]: size === 'xLarge',
-            })}
-          >
-            {children}
-          </Link>
-        </div>
+        <Link {...props} to={link} className={btnClass}>
+          {children}
+        </Link>
       ) : (
-        <button {...props} className={styles.button} type='button'>
+        <button {...props} type='button' className={btnClass}>
           {children}
         </button>
       )}
