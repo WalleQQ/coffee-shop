@@ -1,0 +1,17 @@
+.discount {
+  padding: 0 0 var(--padding-15) 0;
+}
+
+.discountTitle {
+  font-family: 'Gilroy-Black', sans-serif;
+  text-align: right;
+  font-size: var(--font-size-5);
+  line-height: var(--line-height-5);
+  margin: 0 0 var(--margin-3) 0;
+}
+
+.discountText {
+  text-align: right;
+  max-width: var(--width-8);
+  margin: 0 0 var(--margin-4) auto;
+}
