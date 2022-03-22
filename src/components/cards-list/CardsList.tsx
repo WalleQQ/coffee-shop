@@ -15,7 +15,7 @@ export const CardsList = () => {
       oldPrice: '350',
     },
     {
-      id: 0,
+      id: 1,
       title: 'Colombia Supremo',
       description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
       image: `${coffeeImage}`,
@@ -24,7 +24,7 @@ export const CardsList = () => {
       oldPrice: '350',
     },
     {
-      id: 0,
+      id: 2,
       title: 'Colombia Supremo',
       description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
       image: `${coffeeImage}`,
