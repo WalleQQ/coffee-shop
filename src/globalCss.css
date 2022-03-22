@@ -75,8 +75,9 @@
   --width-8: 1107px;
   --width-9: 652px;
   --width-10: 178px;
+  --width-11: 250px;
 
-  --desktop-width: 1660px;
+  --desktop-width: 1160px;
 
   --padding-1: 22px;
   --padding-2: 45px;
@@ -125,6 +126,14 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hidden {

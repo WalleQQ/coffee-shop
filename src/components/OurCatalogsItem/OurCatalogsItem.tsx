@@ -1,10 +1,11 @@
 import React, { FC, useState } from 'react';
 import { AppRoute } from '../../const';
+import { ICatalog } from '../../types/types';
 import { Button } from '../ui/button/Button';
 import styles from './OurCatalogsItem.module.css';
 
 interface OurCatalogsItemProps {
-  product: any;
+  product: ICatalog;
 }
 
 export const OurCatalogsItem: FC<OurCatalogsItemProps> = ({ product }) => {
@@ -24,7 +25,7 @@ export const OurCatalogsItem: FC<OurCatalogsItemProps> = ({ product }) => {
         />
       </div>
       {isHover && (
-        <Button link={AppRoute.CATALOG} size='large'>
+        <Button link={AppRoute.CATALOG} size='small'>
           Купить
         </Button>
       )}
