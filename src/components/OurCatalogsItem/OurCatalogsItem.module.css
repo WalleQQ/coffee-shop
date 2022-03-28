@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: var(--width-2);
+  width: var(--width-11);
   height: var(--height-2);
   background: var(--basic-white);
   box-shadow: var(--box-shadow-1);
@@ -20,7 +20,8 @@
   justify-content: space-between;
   position: relative;
   top: 0;
-  height: 370px;
+  padding: var(--padding-17);
+  height: var(--height-3);
 }
 
 .ourCatalogsItemTitle {
@@ -28,6 +29,7 @@
   font-size: var(--font-size-2);
   line-height: var(--line-height-1);
   order: 2;
+  text-align: center;
 }
 
 .ourCatalogsItemImage {

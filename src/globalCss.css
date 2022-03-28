@@ -30,6 +30,7 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-yellow: #f9b300;
+  --basic-grey: #c6c6c6;
   --background-beige: #fff7e1;
   --background-input-search: #fcfcfc;
   --background-inst-cards: #e9e9e9;
@@ -51,15 +52,19 @@
   --font-size-3: 80px;
   --font-size-4: 30px;
   --font-size-5: 50px;
+  --font-size-6: 35px;
 
   --line-height-1: 29px;
   --line-height-2: 32.5px;
   --line-height-3: 100px;
   --line-height-4: 36px;
   --line-height-5: 62px;
+  --line-height-6: 22px;
+  --line-height-7: 44px;
 
   --height-1: 30px;
   --height-2: 539px;
+  --height-3: 370px;
 
   --width-1: 658px;
   --width-2: 400px;
@@ -68,8 +73,12 @@
   --width-5: 283px;
   --width-6: 233px;
   --width-7: 125px;
+  --width-8: 1107px;
+  --width-9: 652px;
+  --width-10: 178px;
+  --width-11: 250px;
 
-  --desktop-width: 1660px;
+  --desktop-width: 1160px;
 
   --padding-1: 22px;
   --padding-2: 45px;
@@ -85,16 +94,24 @@
   --padding-12: 90px;
   --padding-13: 145px;
   --padding-14: 65px;
+  --padding-15: 117px;
+  --padding-16: 46px;
+  --padding-17: 10px;
 
   --margin-1: 60px;
   --margin-2: 90px;
   --margin-3: 50px;
+  --margin-4: 80px;
+  --margin-5: 20px;
+  --margin-6: 8px;
 
   --gap-1: 53px;
   --gap-2: 100px;
   --gap-3: 30px;
+  --gap-4: 20px;
 
   --box-shadow-1: 0px 0px 30px rgba(146, 146, 146, 0.2);
+  --box-shadow-2: 0px 0px 20px rgba(146, 146, 146, 0.25);
 }
 
 ul {
@@ -113,12 +130,25 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page {
@@ -144,6 +174,4 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  margin: 0 auto;
-  max-width: var(--desktop-width);
 }

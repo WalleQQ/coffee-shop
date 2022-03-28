@@ -23,8 +23,10 @@
 }
 
 .sm {
-  max-width: var(--width-6);
-  padding: var(--padding-9) var(--padding-10);
+  max-width: var(--width-10);
+  padding: var(--padding-9) var(--padding-16);
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-6);
 }
 
 .md {

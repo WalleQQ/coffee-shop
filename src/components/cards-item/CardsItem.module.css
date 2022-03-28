@@ -1,0 +1,60 @@
+.cardsItem {
+  box-sizing: border-box;
+  width: var(--width-2);
+  height: var(--width-9);
+  background: var(--basic-white);
+  box-shadow: var(--box-shadow-2);
+  border-radius: var(--border-radius-2);
+  padding: var(--padding-1) var(--padding-8) var(--padding-3) var(--padding-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsItemTitle {
+  margin-bottom: var(--margin-5);
+  font-family: 'Gilroy-Black', sans-serif;
+  text-align: center;
+  color: var(--catalog-cards-black);
+}
+
+.cardsItemImage {
+  justify-self: center;
+  margin-bottom: var(--margin-5);
+}
+
+.cardsItemDiscountText {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-6);
+  margin-bottom: var(--margin-5);
+  color: var(--basic-yellow);
+  align-self: flex-start;
+}
+
+.cardsItemText {
+  margin-bottom: var(--margin-6);
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-6);
+  color: var(--catalog-cards-black);
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap-1);
+}
+
+.oldPrice {
+  margin: 0;
+  text-decoration-line: line-through;
+  color: var(--basic-grey);
+}
+
+.newPrice {
+  margin: 0;
+  font-family: 'Gilroy-Black', sans-serif;
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-7);
+  color: var(--catalog-cards-black);
+}
