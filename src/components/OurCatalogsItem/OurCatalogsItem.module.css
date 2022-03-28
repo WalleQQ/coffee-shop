@@ -20,8 +20,8 @@
   justify-content: space-between;
   position: relative;
   top: 0;
-  padding: 10px;
-  height: 370px;
+  padding: var(--padding-17);
+  height: var(--height-3);
 }
 
 .ourCatalogsItemTitle {
