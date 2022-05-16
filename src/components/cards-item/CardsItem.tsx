@@ -1,12 +1,12 @@
-import React, { FC } from 'react';
-import { Button } from '../ui/button/Button';
+import React, {FC} from 'react';
+import {Button} from '../ui/button/Button';
 import styles from './CardsItem.module.css';
 
 interface CardsItemProps {
   product: any;
 }
 
-export const CardsItem: FC<CardsItemProps> = ({ product }) => {
+export const CardsItem: FC<CardsItemProps> = ({product}) => {
   return (
     <li className={styles.cardsItem}>
       <p className={styles.cardsItemDiscountText}>Скидки</p>

@@ -1,38 +1,15 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './CardsList.module.css';
-import coffeeImage from '../../assets/products/coffee-product.jpg';
-import { CardsItem } from '../cards-item/CardsItem';
+import {CardsItem} from '../cards-item/CardsItem';
+import {dbInstance} from '../../utils/axios';
 
 export const CardsList = () => {
-  const products = [
-    {
-      id: 0,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-    {
-      id: 1,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-    {
-      id: 2,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-  ];
+  const [products, setProducts] = useState<any[]>([]);
+  useEffect(() => {
+    dbInstance.get('/products/sales.json').then(function (response) {
+      setProducts(response.data);
+    });
+  }, []);
 
   return (
     <ul className={styles.cardsList}>
