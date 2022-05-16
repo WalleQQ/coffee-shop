@@ -5,7 +5,11 @@ import {PageWrapper} from './components/layout/page-wrapper/PageWrapper';
 import {Catalog} from './components/pages/catalog/Catalog';
 import {HomePage} from './components/pages/homePage/HomePage';
 import {User} from './components/user/User';
+import {QueryClient, QueryClientProvider} from 'react-query';
+import {ReactQueryDevtools} from 'react-query/devtools';
 import './globalCss.css';
+
+const queryClient = new QueryClient();
 
 const App = () => {
   const routes = (
@@ -17,11 +21,14 @@ const App = () => {
     </Routes>
   );
   return (
-    <BrowserRouter>
-      <div className='App'>
-        <PageWrapper>{routes}</PageWrapper>
-      </div>
-    </BrowserRouter>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <div className='App'>
+          <PageWrapper>{routes}</PageWrapper>
+        </div>
+      </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen />
+    </QueryClientProvider>
   );
 };
 
