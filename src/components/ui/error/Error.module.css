@@ -1,0 +1,5 @@
+.errorMessage {
+  font-family: 'Gilroy-Black', sans-serif;
+  text-align: center;
+  color: var(--catalog-cards-black);
+}

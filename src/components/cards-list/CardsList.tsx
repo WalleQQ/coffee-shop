@@ -1,42 +1,25 @@
 import React from 'react';
 import styles from './CardsList.module.css';
-import coffeeImage from '../../assets/products/coffee-product.jpg';
-import { CardsItem } from '../cards-item/CardsItem';
+import {CardsItem} from '../cards-item/CardsItem';
+import {dbInstance} from '../../utils/axios';
+import {useQuery} from 'react-query';
+import {Loader} from '../ui/loader/Loader';
+import {Error} from '../ui/error/Error';
+
+async function fetchProducts() {
+  const resp = await dbInstance.get('/products/sales.json');
+  return resp.data;
+}
 
 export const CardsList = () => {
-  const products = [
-    {
-      id: 0,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-    {
-      id: 1,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-    {
-      id: 2,
-      title: 'Colombia Supremo',
-      description: 'Свежеобжаренный кофе - описание товара, вкус, аромат',
-      image: `${coffeeImage}`,
-      alt: 'Кофе Colombia Supremo',
-      price: '250',
-      oldPrice: '350',
-    },
-  ];
+  const {data, error, isFetching} = useQuery('products', fetchProducts);
+
+  if (isFetching) return <Loader />;
+  if (error) return <Error />;
 
   return (
     <ul className={styles.cardsList}>
-      {products.map((product) => (
+      {data.map((product: any) => (
         <CardsItem product={product} key={product.id} />
       ))}
     </ul>
