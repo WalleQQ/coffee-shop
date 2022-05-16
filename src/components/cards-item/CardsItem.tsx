@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
+import {IProducts} from '../../types/types';
 import {Button} from '../ui/button/Button';
 import styles from './CardsItem.module.css';
 
 interface CardsItemProps {
-  product: any;
+  product: IProducts;
 }
 
 export const CardsItem: FC<CardsItemProps> = ({product}) => {
